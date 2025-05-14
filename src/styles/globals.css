@@ -1,0 +1,31 @@
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/500.css';
+@import '@fontsource/plus-jakarta-sans/600.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #512da8;
+  --primary-light: #8559da;
+  --primary-dark: #140078;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #fafafa;
+}
+
+.wallet-adapter-button {
+  background: var(--primary) !important;
+  border-radius: 12px !important;
+  padding: 12px 24px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.wallet-adapter-button:hover {
+  background: var(--primary-light) !important;
+  transform: translateY(-2px);
+}
